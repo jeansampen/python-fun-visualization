@@ -13,9 +13,9 @@ def main(**kwargs):
     pdf_x = norm.pdf(x)
     cdf_x = norm.cdf(x)
 
-    # ax[0].plot(x, pdf_x, 'r-', lw=5, alpha=0.6, label='norm pdf')
-    # ax[1].plot(x, cdf_x, 'r-', lw=5, alpha=0.6, label='norm pdf')
-    # plt.show()
+    ax[0].plot(x, pdf_x, 'r-', lw=5, alpha=0.6, label='norm pdf')
+    ax[1].plot(x, cdf_x, 'r-', lw=5, alpha=0.6, label='norm pdf')
+    plt.show()
 
 
 if __name__ == '__main__':
