@@ -14,7 +14,13 @@ def main(**kwargs):
     cdf_x = norm.cdf(x)
 
     ax[0].plot(x, pdf_x, 'r-', lw=5, alpha=0.6, label='norm pdf')
-    ax[1].plot(x, cdf_x, 'r-', lw=5, alpha=0.6, label='norm pdf')
+    ax[1].plot(x, cdf_x, 'r-', lw=5, alpha=0.6, label='norm cdf')
+
+
+    ax[0].set_title('Density')
+    ax[1].set_title('Distribution')
+
+
     plt.show()
 
 
